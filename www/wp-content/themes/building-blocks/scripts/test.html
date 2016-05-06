@@ -1,0 +1,515 @@
+﻿<html>
+    <head>
+        <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="test.js" ></script>
+        <link type="text/css" rel="stylesheet" href="style.css" />
+    </head>
+    <body style="background-color: #ccc;">
+        <div id="page">
+        <div class="page-content">
+            <div id="start">
+                <p>Для получения точного результата рекомендуем вам пользоваться исключительно собственными знаниями и пройти тест за 30-35 минут.</p>
+                <h3>Пожалуйста, укажите ваши данные</h3>
+                <label>Имя:</label><input type="text" /><br/>
+                <label>Email:</label><input type="text" /><br/>
+                <span class="err"></span>
+                <button id="GO" class="btn_sign_up small" style="margin-left: 0px !important;">Начать тестирование</button>
+            </div>
+            <div id="hide">
+                <div class="count"></div>
+                <div id="test_contr">
+                    <div id="elementary">
+                        <div>
+                            <img src="http://englite.ru/wp-content/uploads/2014/06/16.png" alt="" />
+                            <h3>Could we ___ the bill, please?</h3>
+                            <input type="radio" name="one" id="one1" rc="true"/><label for="one1" >take</label>
+                            <input type="radio" name="one" id="one2"/><label for="one2" >want</label>
+                            <input type="radio" name="one" id="one3"/><label for="one3" >have</label>
+                            <input type="radio" name="one" id="one4"/><label for="one4" >ask</label>
+                        </div>
+                        <div>
+                            <img src="http://englite.ru/wp-content/uploads/2014/06/22.png" alt="" />
+                            <h3>I’m Italian. ___ family are from Venice.</h3>
+                            <input type="radio" name="one" id="one5" rc="true"/><label for="one5" >Our</label>
+                            <input type="radio" name="one" id="one6"/><label for="one6" >My</label>
+                            <input type="radio" name="one" id="one7"/><label for="one7" >Her</label>
+                            <input type="radio" name="one" id="one8"/><label for="one8" >Me</label>
+                        </div>
+                        <div>
+                            <img src="http://englite.ru/wp-content/uploads/2014/06/31.png" alt="" />
+                            <h3>What ___ do tomorrow?</h3>
+                            <input type="radio" name="one" id="one9" rc="true"/><label for="one9" >are you going</label>
+                            <input type="radio" name="one" id="one10"/><label for="one10" >you going</label>
+                            <input type="radio" name="one" id="one11"/><label for="one11" >are you going to</label>
+                            <input type="radio" name="one" id="one12"/><label for="one12" >do you go to</label>
+                        </div>
+                        <div>
+                            <img src="http://englite.ru/wp-content/uploads/2014/06/41.png" alt="" />
+                            <h3>There isn’t ___ pasta in the kitchen.</h3>
+                            <input type="radio" name="one" id="one13" rc="true"/><label for="one13" >some </label>
+                            <input type="radio" name="one" id="one14"/><label for="one14" >many </label>
+                            <input type="radio" name="one" id="one15"/><label for="one15" >a</label>
+                            <input type="radio" name="one" id="one16"/><label for="one16" >any</label>
+                        </div>
+                        <div>
+                            <img src="http://englite.ru/wp-content/uploads/2014/06/51.png" alt="" />
+                            <h3>They’re ___.</h3>
+                            <input type="radio" name="one" id="one17" rc="true"/><label for="one17" >bigs cars</label>
+                            <input type="radio" name="one" id="one18"/><label for="one18" >cars bigs</label>
+                            <input type="radio" name="one" id="one19"/><label for="one19" >big cars</label>
+                            <input type="radio" name="one" id="one20"/><label for="one20" >bigs car</label>
+                        </div>
+                        <div>
+                            <img src="http://englite.ru/wp-content/uploads/2014/06/61.png" alt="" />
+                            <h3>Can I pay ___ credit card?</h3>
+                            <input type="radio" name="one" id="one21" rc="true"/><label for="one21" >by </label>
+                            <input type="radio" name="one" id="one22"/><label for="one22" >in </label>
+                            <input type="radio" name="one" id="one23"/><label for="one23" >on </label>
+                            <input type="radio" name="one" id="one24"/><label for="one24" >with</label>
+                        </div>
+                        <div>
+                            <img src="http://englite.ru/wp-content/uploads/2014/06/71.png" alt="" />
+                            <h3>The elephant is ___ land animal in the world.</h3>
+                            <input type="radio" name="one" id="one25" rc="true"/><label for="one25" >the bigger</label>
+                            <input type="radio" name="one" id="one26"/><label for="one26" >the most big</label>
+                            <input type="radio" name="one" id="one27"/><label for="one27" >biggest</label>
+                            <input type="radio" name="one" id="one28"/><label for="one28" >the biggest</label>
+                        </div>
+                        <div>
+                            <img src="http://englite.ru/wp-content/uploads/2014/06/81.png" alt="" />
+                            <h3>We ___ to Canada.</h3>
+                            <input type="radio" name="one" id="one29" rc="true"/><label for="one29" >haven’t be</label>
+                            <input type="radio" name="one" id="one30"/><label for="one30" >hasn’t been</label>
+                            <input type="radio" name="one" id="one31"/><label for="one31" >hasn’t be</label>
+                            <input type="radio" name="one" id="one32"/><label for="one32" >haven’t been</label>
+                        </div>
+                        <div>
+                            <img src="http://englite.ru/wp-content/uploads/2014/06/91.png" alt="" />
+                            <h3>Would you like ___ coffee?</h3>
+                            <input type="radio" name="one" id="one33" rc="true"/><label for="one33" >other</label>
+                            <input type="radio" name="one" id="one34"/><label for="one34" >another </label>
+                            <input type="radio" name="one" id="one35"/><label for="one35" >some other</label>
+                            <input type="radio" name="one" id="one36"/><label for="one36" >more one</label>
+                        </div>
+                        <div>
+                            <img src="http://englite.ru/wp-content/uploads/2014/06/112.png" alt="" />
+                            <h3>___ the time?</h3>
+                            <input type="radio" name="one" id="one37" rc="true"/><label for="one37" >What’s</label>
+                            <input type="radio" name="one" id="one38"/><label for="one38" >What is it </label>
+                            <input type="radio" name="one" id="one39"/><label for="one39" >What</label>
+                            <input type="radio" name="one" id="one40"/><label for="one40" >What it is</label>
+                        </div>
+                        <div>
+                            <img src="http://englite.ru/wp-content/uploads/2014/06/121.png" alt="" />
+                            <h3>I can’t see. Where are my ___?</h3>
+                            <input type="radio" name="one" id="one41" rc="true"/><label for="one41" >glasses </label>
+                            <input type="radio" name="one" id="one42"/><label for="one42" >stamps </label>
+                            <input type="radio" name="one" id="one43"/><label for="one43" >keys </label>
+                            <input type="radio" name="one" id="one44"/><label for="one44" >lipsticks</label>
+                        </div>
+                        <div>
+                            <img src="http://englite.ru/wp-content/uploads/2014/06/131.png" alt="" />
+                            <h3> ___ this book before?</h3>
+                            <input type="radio" name="one" id="one45" rc="true"/><label for="one45" >Do you read </label>
+                            <input type="radio" name="one" id="one46"/><label for="one46" >Are you going to read </label>
+                            <input type="radio" name="one" id="one47"/><label for="one47" >Are you reading </label>
+                            <input type="radio" name="one" id="one48"/><label for="one48" >Have you read</label>
+                        </div>
+                        <div>
+                            <img src="http://englite.ru/wp-content/uploads/2014/06/141.png" alt="" />
+                            <h3>Today’s breakfast is ___ than yesterday's.</h3>
+                            <input type="radio" name="one" id="one49" rc="true"/><label for="one49" >more good</label>
+                            <input type="radio" name="one" id="one50"/><label for="one50" >gooder</label>
+                            <input type="radio" name="one" id="one51"/><label for="one51" >better </label>
+                            <input type="radio" name="one" id="one52"/><label for="one52" >more better</label>
+                        </div>
+                        <div>
+                            <img src="http://englite.ru/wp-content/uploads/2014/06/151.png" alt="" />
+                            <h3>It’s my ___ dog.</h3>
+                            <input type="radio" name="one" id="one53" rc="true"/><label for="one53" >parents </label>
+                            <input type="radio" name="one" id="one54"/><label for="one54" >parents’ </label>
+                            <input type="radio" name="one" id="one55"/><label for="one55" >parent </label>
+                            <input type="radio" name="one" id="one56"/><label for="one56" >parent’s</label>
+                        </div>
+                        <div>
+                            <img src="http://englite.ru/wp-content/uploads/2014/06/161.png" alt="" />
+                            <h3>He ___ glasses.</h3>
+                            <input type="radio" name="one" id="one57" rc="true"/><label for="one57" >doesn’t usually wear  </label>
+                            <input type="radio" name="one" id="one58"/><label for="one58" >isn’t usually wearing</label>
+                            <input type="radio" name="one" id="one59"/><label for="one59" >wears usually</label>
+                            <input type="radio" name="one" id="one60"/><label for="one60" >doesn’t wear usually</label>
+                        </div>
+                        <div>
+                            <img src="http://englite.ru/wp-content/uploads/2014/06/171.png" alt="" />
+                            <h3>The people ___ in room 5.</h3>
+                            <input type="radio" name="one" id="one61" rc="true"/><label for="one61" >is</label>
+                            <input type="radio" name="one" id="one62"/><label for="one62" >am</label>
+                            <input type="radio" name="one" id="one63"/><label for="one63" >are </label>
+                            <input type="radio" name="one" id="one64"/><label for="one64" >be</label>
+                        </div>
+                        <div>
+                            <img src="http://englite.ru/wp-content/uploads/2014/06/181.png" alt="" />
+                            <h3>They didn’t ___ the tickets.</h3>
+                            <input type="radio" name="one" id="one65" rc="true"/><label for="one65" >booking </label>
+                            <input type="radio" name="one" id="one66"/><label for="one66" >booked </label>
+                            <input type="radio" name="one" id="one67"/><label for="one67" >to book </label>
+                            <input type="radio" name="one" id="one68"/><label for="one68" >book</label>
+                        </div>
+                        <div>
+                            <img src="http://englite.ru/wp-content/uploads/2014/06/191.png" alt="" />
+                            <h3>I haven’t ___ this picture before.</h3>
+                            <input type="radio" name="one" id="one69" rc="true"/><label for="one69" >seen</label>
+                            <input type="radio" name="one" id="one70"/><label for="one70" >saw</label>
+                            <input type="radio" name="one" id="one71"/><label for="one71" >to see</label>
+                            <input type="radio" name="one" id="one72"/><label for="one72" >see</label>
+                        </div>
+                        <div>
+                            <img src="http://englite.ru/wp-content/uploads/2014/06/20.png" alt="" />
+                            <h3>I always ___.</h3>
+                            <input type="radio" name="one" id="one73" rc="true"/><label for="one73" >work hard</label>
+                            <input type="radio" name="one" id="one74"/><label for="one74" >hard work</label>
+                            <input type="radio" name="one" id="one75"/><label for="one75" >hardly work</label>
+                            <input type="radio" name="one" id="one76"/><label for="one76" >work hardly</label>
+                        </div>
+                        <div>
+                            <img src="http://englite.ru/wp-content/uploads/2014/06/211.png" alt="" />
+                            <h3>What ___ do tomorrow?</h3>
+                            <input type="radio" name="one" id="one77" rc="true"/><label for="one77" >are you going</label>
+                            <input type="radio" name="one" id="one78"/><label for="one78" >are you going to</label>
+                            <input type="radio" name="one" id="one79"/><label for="one79" >you going</label>
+                            <input type="radio" name="one" id="one80"/><label for="one80" >do you go to</label>
+                        </div>
+                    </div>
+                    <div id="elementary_voc">
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на русский: house</h3>
+                            <input type="radio" name="elm" id="elm1"/><label for="elm1" >здание</label>
+                            <input type="radio" name="elm" id="elm2" rc="true"/><label for="elm2" >дом</label>
+                            <input type="radio" name="elm" id="elm3"/><label for="elm3" >дача</label>
+                            <input type="radio" name="elm" id="elm4"/><label for="elm4" >стройка</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на русский: bag</h3>
+                            <input type="radio" name="elm" id="elm1"/><label for="elm1" >пакет  </label>
+                            <input type="radio" name="elm" id="elm2"/><label for="elm2" >чемодан   </label>
+                            <input type="radio" name="elm" id="elm3"  rc="true"/><label for="elm3" >сумка   </label>
+                            <input type="radio" name="elm" id="elm4"/><label for="elm4" >карман   </label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на русский: week</h3>
+                            <input type="radio" name="elm" id="elm1"/><label for="elm1" >выходной</label>
+                            <input type="radio" name="elm" id="elm2"  rc="true"/><label for="elm2" >неделя</label>
+                            <input type="radio" name="elm" id="elm3"/><label for="elm3" >рабочий день</label>
+                            <input type="radio" name="elm" id="elm4"/><label for="elm4" >отдых</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на русский: time</h3>
+                            <input type="radio" name="elm" id="elm1"/><label for="elm1" >ожидание</label>
+                            <input type="radio" name="elm" id="elm2"  rc="true"/><label for="elm2" >время</label>
+                            <input type="radio" name="elm" id="elm3"/><label for="elm3" >час</label>
+                            <input type="radio" name="elm" id="elm4"/><label for="elm4" >часы</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на русский: usually</h3>
+                            <input type="radio" name="elm" id="elm1"/><label for="elm1" >постоянно</label>
+                            <input type="radio" name="elm" id="elm2"  rc="true"/><label for="elm2" >обычно</label>
+                            <input type="radio" name="elm" id="elm3"/><label for="elm3" >всегда</label>
+                            <input type="radio" name="elm" id="elm4"/><label for="elm4" >часто</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на русский: father</h3>
+                            <input type="radio" name="elm" id="elm1"/><label for="elm1" >брать  </label>
+                            <input type="radio" name="elm" id="elm2"  rc="true"/><label for="elm2" >отец   </label>
+                            <input type="radio" name="elm" id="elm3"/><label for="elm3" >мать   </label>
+                            <input type="radio" name="elm" id="elm4"/><label for="elm4" >кузен    </label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на русский: sun</h3>
+                            <input type="radio" name="elm" id="elm1"/><label for="elm1" >сердце</label>
+                            <input type="radio" name="elm" id="elm2"/><label for="elm2" >сумма</label>
+                            <input type="radio" name="elm" id="elm3"  rc="true"/><label for="elm3" >солнце</label>
+                            <input type="radio" name="elm" id="elm4"/><label for="elm4" >сын</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на английский: правило </h3>
+                            <input type="radio" name="elm" id="elm1"/><label for="elm1" >table  </label>
+                            <input type="radio" name="elm" id="elm2"/><label for="elm2" >exercise  </label>
+                            <input type="radio" name="elm" id="elm3"/><label for="elm3" >rail  </label>
+                            <input type="radio" name="elm" id="elm4" rc="true"/><label for="elm4" >rule    </label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на английский: завод</h3>
+                            <input type="radio" name="elm" id="elm1"/><label for="elm1" >work</label>
+                            <input type="radio" name="elm" id="elm2"/><label for="elm2" >farm</label>
+                            <input type="radio" name="elm" id="elm3" rc="true"/><label for="elm3" >factory</label>
+                            <input type="radio" name="elm" id="elm4"/><label for="elm4" >manufacture</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на английский: учитель</h3>
+                            <input type="radio" name="elm" id="elm1"/><label for="elm1" >trainee</label>
+                            <input type="radio" name="elm" id="elm2" rc="true"/><label for="elm2" >teacher</label>
+                            <input type="radio" name="elm" id="elm3"/><label for="elm3" >instructor</label>
+                            <input type="radio" name="elm" id="elm4"/><label for="elm4" >professor</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на английский: клубника</h3>
+                            <input type="radio" name="elm" id="elm1" rc="true"/><label for="elm1" >strawberry</label>
+                            <input type="radio" name="elm" id="elm2"/><label for="elm2" >blueberry</label>
+                            <input type="radio" name="elm" id="elm3"/><label for="elm3" >cranberry</label>
+                            <input type="radio" name="elm" id="elm4"/><label for="elm4" >redberry</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на английский: хлеб</h3>
+                            <input type="radio" name="elm" id="elm1"/><label for="elm1" >cookie</label>
+                            <input type="radio" name="elm" id="elm2"/><label for="elm2" >pie</label>
+                            <input type="radio" name="elm" id="elm3"/><label for="elm3" >cake</label>
+                            <input type="radio" name="elm" id="elm4" rc="true"/><label for="elm4" >bread</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на английский: круг</h3>
+                            <input type="radio" name="elm" id="elm1"/><label for="elm1" >point</label>
+                            <input type="radio" name="elm" id="elm2" rc="true"/><label for="elm2" >circle</label>
+                            <input type="radio" name="elm" id="elm3"/><label for="elm3" >dot</label>
+                            <input type="radio" name="elm" id="elm4"/><label for="elm4" >oval</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на английский: вода</h3>
+                            <input type="radio" name="elm" id="elm1"/><label for="elm1" >drink   </label>
+                            <input type="radio" name="elm" id="elm2"/><label for="elm2" >tea    </label>
+                            <input type="radio" name="elm" id="elm3"/><label for="elm3" >juice    </label>
+                            <input type="radio" name="elm" id="elm4" rc="true"/><label for="elm4" >water  </label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Какой из вариантов слова 'змея'  правильный?</h3>
+                            <input type="radio" name="elm" id="elm1"/><label for="elm1" >sneke</label>
+                            <input type="radio" name="elm" id="elm2"/><label for="elm2" >snaky</label>
+                            <input type="radio" name="elm" id="elm3" rc="true"/><label for="elm3" >snake</label>
+                            <input type="radio" name="elm" id="elm4"/><label for="elm4" >sneik</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Какой из вариантов слова 'мышь'  правильный?</h3>
+                            <input type="radio" name="elm" id="elm1"/><label for="elm1" >mauce</label>
+                            <input type="radio" name="elm" id="elm2"/><label for="elm2" >mouce</label>
+                            <input type="radio" name="elm" id="elm3"/><label for="elm3" >mause</label>
+                            <input type="radio" name="elm" id="elm4" rc="true"/><label for="elm4" >mouse</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Какой из вариантов слова 'школа'  правильный?</h3>
+                            <input type="radio" name="elm" id="elm1"/><label for="elm1" >scool</label>
+                            <input type="radio" name="elm" id="elm2" rc="true"/><label for="elm2" >school</label>
+                            <input type="radio" name="elm" id="elm3"/><label for="elm3" >schul</label>
+                            <input type="radio" name="elm" id="elm4"/><label for="elm4" >schol</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Какой из вариантов слова 'сок'  правильный?</h3>
+                            <input type="radio" name="elm" id="elm1"/><label for="elm1" >jutise</label>
+                            <input type="radio" name="elm" id="elm2"/><label for="elm2" >juise</label>
+                            <input type="radio" name="elm" id="elm3"/><label for="elm3" >justice</label>
+                            <input type="radio" name="elm" id="elm4" rc="true"/><label for="elm4" >juice</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Какой из вариантов слова 'двери'  правильный?</h3>
+                            <input type="radio" name="elm" id="elm1"/><label for="elm1" >dhor</label>
+                            <input type="radio" name="elm" id="elm2"/><label for="elm2" >toor</label>
+                            <input type="radio" name="elm" id="elm3" rc="true"/><label for="elm3" >door   </label>
+                            <input type="radio" name="elm" id="elm4"/><label for="elm4" >dor</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Какой из вариантов слова 'мечта'  правильный?</h3>
+                            <input type="radio" name="elm" id="elm1"/><label for="elm1" >draem   </label>
+                            <input type="radio" name="elm" id="elm2" rc="true"/><label for="elm2" >dream   </label>
+                            <input type="radio" name="elm" id="elm3"/><label for="elm3" >drean       </label>
+                            <input type="radio" name="elm" id="elm4"/><label for="elm4" >dreem </label>
+                        </div>
+                    </div>
+                    <div id="preIntermediate_voc">
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на английский: огромный</h3>
+                            <input type="radio" name="two" id="two1"/><label for="two1" >big</label>
+                            <input type="radio" name="two" id="two2"  rc="true"/><label for="two2" >huge</label>
+                            <input type="radio" name="two" id="two3"/><label for="two3" >wide</label>
+                            <input type="radio" name="two" id="two4"/><label for="two4" >deep</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на английский:  книга</h3>
+                            <input type="radio" name="two" id="two5"/><label for="two5" >paper</label>
+                            <input type="radio" name="two" id="two6"/><label for="two6" >note</label>
+                            <input type="radio" name="two" id="two7" rc="true"/><label for="two7" >book</label>
+                            <input type="radio" name="two" id="two8"/><label for="two8" >box</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на английский:  одалживать</h3>
+                            <input type="radio" name="two" id="two9"/><label for="two9" >give</label>
+                            <input type="radio" name="two" id="two10"/><label for="two10" >propose</label>
+                            <input type="radio" name="two" id="two11"/><label for="two11" >take</label>
+                            <input type="radio" name="two" id="two12" rc="true"/><label for="two12" >borrow</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на английский:  зависеть</h3>
+                            <input type="radio" name="two" id="two13"/><label for="two13" >enjoy</label>
+                            <input type="radio" name="two" id="two14"  rc="true"/><label for="two14" >depend</label>
+                            <input type="radio" name="two" id="two15"/><label for="two15" >hope</label>
+                            <input type="radio" name="two" id="two16"/><label for="two16" >envy</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на английский:  сравнивать</h3>
+                            <input type="radio" name="two" id="two17"  rc="true"/><label for="two17" >compare  </label>
+                            <input type="radio" name="two" id="two18"/><label for="two18" >draw    </label>
+                            <input type="radio" name="two" id="two19"/><label for="two19" >weigh   </label>
+                            <input type="radio" name="two" id="two20"/><label for="two20" >match</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на русский:  future</h3>
+                            <input type="radio" name="two" id="two21"/><label for="two21" >особенность</label>
+                            <input type="radio" name="two" id="two22"  rc="true"/><label for="two22" >будущее</label>
+                            <input type="radio" name="two" id="two23"/><label for="two23" >характеристика</label>
+                            <input type="radio" name="two" id="two24"/><label for="two24" >время</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на русский:  story</h3>
+                            <input type="radio" name="two" id="two25"/><label for="two25" >сочинение</label>
+                            <input type="radio" name="two" id="two26"/><label for="two26" >статья</label>
+                            <input type="radio" name="two" id="two27"/><label for="two27" >журнал</label>
+                            <input type="radio" name="two" id="two28"  rc="true"/><label for="two28" >история</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на русский:   human</h3>
+                            <input type="radio" name="two" id="two29"/><label for="two29" >млекопитающее  </label>
+                            <input type="radio" name="two" id="two30"/><label for="two30" >мужчина  </label>
+                            <input type="radio" name="two" id="two31"/><label for="two31" >особa</label>
+                            <input type="radio" name="two" id="two32" rc="true"/><label for="two32" >человек</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на русский:  whale</h3>
+                            <input type="radio" name="two" id="two33"/><label for="two33" >целый</label>
+                            <input type="radio" name="two" id="two34"  rc="true"/><label for="two34" >кит</label>
+                            <input type="radio" name="two" id="two35"/><label for="two35" >дыра</label>
+                            <input type="radio" name="two" id="two36"/><label for="two36" >углубление</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на русский:  wrath</h3>
+                            <input type="radio" name="two" id="two37"/><label for="two37" >внезапно</label>
+                            <input type="radio" name="two" id="two38"/><label for="two38" >гроза</label>
+                            <input type="radio" name="two" id="two39"  rc="true"/><label for="two39" >гнев</label>
+                            <input type="radio" name="two" id="two40"/><label for="two40" >быстро</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на русский:  curse</h3>
+                            <input type="radio" name="two" id="two41"/><label for="two41" >курс</label>
+                            <input type="radio" name="two" id="two42"  rc="true"/><label for="two42" >проклятие</label>
+                            <input type="radio" name="two" id="two43"/><label for="two43" >учеба</label>
+                            <input type="radio" name="two" id="two44"/><label for="two44" >направление</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на русский:   flat</h3>
+                            <input type="radio" name="two" id="two45"  rc="true"/><label for="two45" >квартира</label>
+                            <input type="radio" name="two" id="two46"/><label for="two46" >полнота</label>
+                            <input type="radio" name="two" id="two47"/><label for="two47" >блюдо</label>
+                            <input type="radio" name="two" id="two48"/><label for="two48" >радость</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Какой из вариантов слова ‘правительство’ правильный?</h3>
+                            <input type="radio" name="two" id="two49"/><label for="two49" >gaverment</label>
+                            <input type="radio" name="two" id="two50"/><label for="two50" >goverment</label>
+                            <input type="radio" name="two" id="two51" rc="true"/><label for="two51" >government</label>
+                            <input type="radio" name="two" id="two52"/><label for="two52" >governent</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Какой из вариантов слова ‘развивать’ правильный?</h3>
+                            <input type="radio" name="two" id="two53"  rc="true"/><label for="two53" >development</label>
+                            <input type="radio" name="two" id="two54"/><label for="two54" >developement</label>
+                            <input type="radio" name="two" id="two55"/><label for="two55" >devolepement</label>
+                            <input type="radio" name="two" id="two56"/><label for="two56" >develepment</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Какой из вариантов слова ‘общение’ правильный?</h3>
+                            <input type="radio" name="two" id="two57"/><label for="two57" >comunicate</label>
+                            <input type="radio" name="two" id="two58" rc="true"/><label for="two58" >communicate  </label>
+                            <input type="radio" name="two" id="two59"/><label for="two59" >comunecate</label>
+                            <input type="radio" name="two" id="two60"/><label for="two60" >communecate</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Какой из вариантов слова ‘объяснять’ правильный?</h3>
+                            <input type="radio" name="two" id="two61"/><label for="two61" >exploin</label>
+                            <input type="radio" name="two" id="two62" rc="true"/><label for="two62" >explain</label>
+                            <input type="radio" name="two" id="two63"/><label for="two63" >erplain</label>
+                            <input type="radio" name="two" id="two64"/><label for="two64" >explein</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на русский: square</h3>
+                            <input type="radio" name="two" id="two65"  rc="true"/><label for="two65" >квадрат</label>
+                            <input type="radio" name="two" id="two66"/><label for="two66" >трапеция</label>
+                            <input type="radio" name="two" id="two67"/><label for="two67" >прямоугольник</label>
+                            <input type="radio" name="two" id="two68"/><label for="two68" >треугольник</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на русский: nightmare</h3>
+                            <input type="radio" name="two" id="two69"/><label for="two69" >ночная рубашка</label>
+                            <input type="radio" name="two" id="two70"  rc="true"/><label for="two70" >ночной кошмар</label>
+                            <input type="radio" name="two" id="two71"/><label for="two71" >ночная дорожка</label>
+                            <input type="radio" name="two" id="two72"/><label for="two72" >ночной горшок</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Какой из вариантов слова 'вдохновение'  правильный?</h3>
+                            <input type="radio" name="two" id="two73"/><label for="two73" >inspiretion</label>
+                            <input type="radio" name="two" id="two74"/><label for="two74" >ispiration</label>
+                            <input type="radio" name="two" id="two75"  rc="true"/><label for="two75" >inspiration</label>
+                            <input type="radio" name="two" id="two76"/><label for="two76" >inpiration</label>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h3>Переведите на английский: память</h3>
+                            <input type="radio" name="two" id="two77"  rc="true"/><label for="two77" >brain</label>
+                            <input type="radio" name="two" id="two78"/><label for="two78" >power</label>
+                            <input type="radio" name="two" id="two79"/><label for="two79" >memory</label>
+                            <input type="radio" name="two" id="two80"/><label for="two80" >head</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn_blc">
+                    <button id="next_test" class="btn_sign_up alignright">Продолжить --></button>
+                </div>
+            </div>
+        </div>
+        </div>    
+    </body>
+</html>
